@@ -1,0 +1,60 @@
+---
+title: "Star Wars Analysis"
+bibliography: starwars-references.bib
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{starwrs-analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 5,
+  fig.retina = 2
+)
+```
+
+```{r setup}
+library(mysimplecompedium)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r read-external-code}
+knitr::read_chunk("my-script.R") 
+```
+
+
+## Introduction
+Due to the recently released Star Wars film, "Star Wars: The Rise of Skywalker: Expanded Edition", we will be analyzing the Star Wars data set, which is already loaded into dplyr and has:
+
+```{r data-intro, echo=FALSE} 
+``` 
+
+
+## Analysys
+Distribution of height of Star Wars characters:
+
+```{r, starwars-plot, fig.cap = "A density plot of heights."}
+ggplot(data = starwars,
+       mapping = aes(x = height))+
+  geom_density()+
+  theme_bw()
+```
+
+We can see in Figure \@ref(fig:starwars-plot) a density plot of all the different heights of Star Wars characters.
+
+
+IThere is an upcoming book that will adapt the events of the film, with some extended and unseen scences [@starwars9book].
+
+## References cited
