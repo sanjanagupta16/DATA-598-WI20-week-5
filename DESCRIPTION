@@ -1,0 +1,17 @@
+Package: mysimplecompedium
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Sanjana Gupta
+Maintainer: sgupta4@uw.edu, https://orcid.org/0000-0002-6985-4640
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr (>= 0.8.4)
+Suggests: 
+    knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
