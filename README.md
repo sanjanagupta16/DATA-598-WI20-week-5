@@ -1,25 +1,15 @@
-
 # mysimplecompedium
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of mysimplecompedium is to ...
+The goal of mysimplecompedium is to practice the creation of an R package. It shows a brief exploration of the starwars dataset.
 
-## Installation
+## License
 
-You can install the released version of mysimplecompedium from [CRAN](https://CRAN.R-project.org) with:
 
-``` r
-install.packages("mysimplecompedium")
-```
+Text and figures: [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 
-## Example
+Code: See the [DESCRIPTION](DESCRIPTION) file
 
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(mysimplecompedium)
-## basic example code
-```
-
+Data: [CC0](http://creativecommons.org/publicdomain/zero/1.0/)
